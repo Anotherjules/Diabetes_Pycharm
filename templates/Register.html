@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Register to create account">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Register</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/Register.css') }}" >
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/nicepage.css') }}" >
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.7.1, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Register">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode">
+  <div class="navbar">
+          <ul>
+            <li><p>{{ username }}</p></li>
+            <li><a class="active" href="{{ url_for('home')}}"><b>HOME</b></a></li>
+            <li><a href="{{ url_for('login')}}">{{ choice }}</a></li>
+            <li><a href="{{ url_for('meals')}}">MEALS</a></li>
+          </ul>
+        </div>
+    <section class="u-clearfix u-white u-section-1" id="sec-f702">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-1">Register to create account {{text}}</h2>
+        <div class="u-form u-gradient u-radius-17 u-form-1">
+          <form action="{{ url_for('reg') }}" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" name="form" style="padding: 10px;">
+            <div class="u-form-group u-form-name">
+              <label for="fullname" class="u-label">Name</label>
+              <input type="text" placeholder="Enter your Name" id="fullname" name="fullname" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-25 u-white" required="">
+            </div>
+            <div class="u-form-group u-form-group">
+              <label for="age" class="u-label">Age</label>
+              <input type="text" placeholder="Enter your age" id="age" name="age" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-25 u-white" required="">
+            </div>
+            <div class="u-form-email u-form-group">
+              <label for="email" class="u-label">Email</label>
+              <input type="email" placeholder="Enter a valid email address" id="email" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-25 u-white" required="">
+            </div>
+            <div class="u-form-group u-form-select u-form-group-1">
+              <label for="select-6719" class="u-label u-text-body-alt-color u-label-1">Are you diabetic?</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-6719" name="select" class="u-border-3 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Don't Know">Don't Know</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-2">
+              <label for="select-f376" class="u-label u-text-body-alt-color u-label-2">Do you have blood pressure?</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-f376" name="BP" class="u-border-3 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" autofocus="autofocus">
+                  <option value="Yes- High">Yes- High</option>
+                  <option value="Yes -Low">Yes -Low</option>
+                  <option value="No">No</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-3">
+              <label for="select-7e2e" class="u-label u-text-body-alt-color u-label-3">Your meal preference:</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-7e2e" name="MP" class="u-border-3 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle">
+                  <option value="Veg">Veg</option>
+                  <option value="Non-veg">Non-veg</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+              <div class="u-form-email u-form-group">
+              <label for="username" class="u-label">Username</label>
+              <input type="text" placeholder="Enter a valid user name" id="username" name="username" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-25 u-white" required="">
+            </div>
+            <div class="u-form-group u-form-group-4">
+              <label for="password" class="u-label">Password</label>
+              <input type="password" placeholder="Enter a password with 8 characters" id="password" name="password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-25 u-white">
+
+            </div>
+
+            <div class="u-form-group u-form-group-4">
+              {% with messages = get_flashed_messages()  %}
+              {% if messages %}
+              {% for message in messages %}
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+              </div>
+              {% endfor %}
+              {% endif %}
+              {% endwith %}
+              <button class="u-btn u-btn-round u-button-style u-radius-50 u-btn-2">Register</button>
+              <h5 class="u-align-center u-text u-text-black u-text-default u-text-2">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3" href="{{ url_for('login') }}"  rel="nofollow">Already have account?</a>
+              </h5>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-dfb5"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
+  </body>
+</html>

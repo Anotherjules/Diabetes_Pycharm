@@ -1,0 +1,147 @@
+ .u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 1174px;
+}
+
+.u-section-1 .u-text-1 {
+  font-weight: 700;
+  margin: 74px auto 0;
+}
+
+.u-section-1 .u-group-1 {
+  width: 639px;
+  min-height: 462px;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  height: auto;
+  margin: 50px auto 60px 238px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px 0 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 244px;
+  width: 570px;
+  margin: 0 auto;
+}
+
+.u-section-1 .u-btn-1 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-group-2 {
+  min-height: 155px;
+  margin: 0;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.u-section-1 .u-btn-2 {
+  border-style: none none solid;
+  font-weight: 700;
+  font-size: 1.125rem;
+  align-self: center;
+  margin: 48px 0 0 auto;
+  padding: 0;
+}
+
+.u-section-1 .u-btn-3 {
+  border-style: none none solid;
+  font-weight: 700;
+  font-size: 1.125rem;
+  align-self: center;
+  margin: -29px auto 0 0;
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-group-1 {
+    height: auto;
+  }
+
+  .u-section-1 .u-group-2 {
+    margin-right: initial;
+    margin-left: initial;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-group-1 {
+    margin-left: 81px;
+  }
+
+  .u-section-1 .u-container-layout-2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-group-1 {
+    width: 540px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-group-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 340px;
+  }
+}
+
+        body {
+          padding: 0;
+          margin: 0;
+        }
+
+        .navbar {
+
+          display: flex;
+          background-color: #FF5C5C;
+          font-family: sans-serif;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          list-style: none;
+        }
+
+        ul>li>a {
+          padding: 0 12px;
+          color: white;
+          font-size: 12px;
+        }
+
+        @media screen and (max-width: 992px) {
+          ul>li>a {
+            font-size: 16px;
+            padding: 0 6px;
+          }
+
+          .navbar {
+            background-color: #000000;
+            background: linear-gradient(to right, #40B6C0 40%, #2689B9 80%);
+          }
+
+        }

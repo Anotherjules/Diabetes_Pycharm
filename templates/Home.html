@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Services">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/Home.css') }}" >
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/nicepage.css') }}" >
+    <meta name="generator" content="Nicepage 4.7.1, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Chivo:300,300i,400,400i,700,700i,900,900i">
+
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode">
+  <div class="navbar">
+          <ul>
+            <li><b>{{ username }}</b></li>
+            <li><a class="active" href="{{ url_for('home')}}"><b>HOME</b></a></li>
+            <li><a href="{{ url_for('login')}}">{{ choice }}</a></li>
+            <li><a href="{{ url_for('meals')}}">MEALS</a></li>
+          </ul>
+  </div>
+    <section class="u-align-left u-clearfix u-grey-10 u-section-1" id="carousel_0cc3">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-align-center u-custom-font u-text u-text-palette-1-base u-text-1">&nbsp;<span style="font-size: 4.5rem;">Pro-diabetic Care</span>
+        </h1>
+        <p class="u-align-center u-custom-font u-font-merriweather u-text u-text-palette-2-dark-1 u-text-2">Get meal plans tailor made for your health and preferences</p>
+        <img src="{{ url_for('static',filename='images/1410409004-0.jpeg') }}" alt="" class="u-image u-image-default u-image-1" data-image-width="1522" data-image-height="1000">
+        <div class="u-align-center u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-list-item u-repeater-item u-white u-list-item-1">
+              <div class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-xl u-container-layout-1"><span class="u-align-left u-file-icon u-icon u-icon-circle u-palette-1-base u-spacing-22 u-icon-1"><a href="{{ url_for('BG')}}"><img src="{{ url_for('static',filename='images/2906449.png') }}" alt=""></a></span>
+                <h5 class="u-text u-text-palette-1-base u-text-3">DAILY ENTRY</h5>
+                <p class="u-text u-text-grey-50 u-text-4">Enter your blood glucose level to get meal plans</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item u-white u-list-item-2">
+              <div class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-xl u-container-layout-2"><span class="u-align-left u-file-icon u-icon u-icon-circle u-palette-1-base u-spacing-22 u-icon-2"><a href="{{ url_for('details')}}" ><img src="{{ url_for('static',filename='images/4228724.png') }}" alt=""></a></span>
+                <h5 class="u-text u-text-palette-1-base u-text-5">Do you have Diabetes ?</h5>
+                <p class="u-text u-text-grey-50 u-text-6">Help you to monitor your sugar levels and to know your progress</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item u-white u-list-item-3">
+              <div class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-xl u-container-layout-3"><span class="u-align-left u-file-icon u-icon u-icon-circle u-palette-1-base u-spacing-22 u-icon-3"><a href="{{ url_for('meals')}}" ><img src="{{ url_for('static',filename='images/706164.png') }}" alt=""></a></span>
+                <h5 class="u-text u-text-palette-1-base u-text-7">MEAL PLANS</h5>
+                <p class="u-text u-text-grey-50 u-text-8">Find meal plans that are suitable for your condition and your taste</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-dfb5"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Thank you for using our website. For more information please contact Christ University Computer Science department.</p>
+      </div></footer>
+  </body>
+</html>
